@@ -1,42 +1,5 @@
 # README
 
-# アプリ名
-
-- FashionBlog
-
-# 概要
-
-ファッション・グルメ・音楽など、自分のライフスタイルを投稿できます。
-
-# 開発状況
-
-- 開発環境
-  開発言語：
-    Ruby/Ruby on Rails
-  開発ツール：
-    Github/Visual Studio Code
-
-- 開発期間
-
-  開発期間：
-    10日間(4/10 ~ 4/20)
-  平均作業時間：
-    1日10時間
-
-# 制作背景
-
-プログラミングに興味を持ち始めた頃から、ファッションを投稿できるSNSを作ってみたいと思っていました。
-もっとファッションを好きになる、ファッションに興味を持つきっかけを提供したく思い開発しております。
-機能自体は未実装の部分が多々ございますので、引き続きアップデートしていきます。
-
-# このサービスでできること
-
-images.githubusercontent.com/62536923/82183146-66beb980-9920-11ea-84ea-36ec0a9637b1.gif
-
-images.githubusercontent.com/62536923/82183043-3aa33880-9920-11ea-85d7-cb6f7da8a275.gif
-
-images.githubusercontent.com/62536923/82183053-3d059280-9920-11ea-9d5c-e3d98a9c1122.gif
-
 ## users_table
 
 |Column|Type|Options|
