@@ -1,0 +1,34 @@
+= render partial: 'shared/main_header'
+
+.user_intro
+  .profile-container
+    .profile-head プロフィール
+    .profile-icon
+      .photo-box
+        .user_image
+          = image_tag current_user.user_image.url
+      .profile_right    
+        .nickname
+          = current_user.nickname
+        %ul.sell_info
+          %li.title 出品数
+          %li.count 25
+    .profile-setting
+      .profile-setting__text-box
+        .introduction
+          = current_user.introduction
+    .sell-tab 出品リスト
+    .tab-area
+      - @products.each do |product|
+        %ul.list-show
+          = link_to product_path(product) do
+            %li.item
+              .image-box
+                .img
+                  = image_tag product.images.first.src.url
+              .name
+                = product.name
+              .updated
+                = product.updated_at.strftime("%Y-%m-%d %H:%M") 
+
+= render partial: 'shared/main_footer'        

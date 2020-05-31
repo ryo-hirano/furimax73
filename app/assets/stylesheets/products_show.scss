@@ -31,22 +31,23 @@
                 width: 560px;
                 align-items: center;
                 margin: 0 auto;
-                img {
+                img.top-image {
                   object-fit: cover;
                   height: 346px;
+                  max-width: 100%;
                 }
                 ul {
                   display: flex;
-                  justify-content: center;
+                  justify-content: space-between;
                   margin-top: 10px;
                   li {
                     width: 25%;
-                    margin: 0 10px 0 0;
-                    img {
+                    img.sub-image {
                       object-fit: cover;
-                      height: 87px;
+                      height: 200px;
+                      width: 200px;
                     }
-                }
+                  }
                 }
               }
             }
@@ -129,6 +130,68 @@
                   border: 1px solid #333;
                   text-decoration: none;
                 }
+              }
+            }
+          }
+          .edit-menu {
+            .more {
+              .more_list {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                a.edit-btn {
+                  background: #3CCACE;
+                  border: 1px solid #3CCACE;
+                  height: 48px;
+                  width: 30%;
+                  font-size: 18px;
+                  border-radius: 100px;
+                  text-decoration: none;
+                  p.text {
+                    text-decoration: none;
+                    color: #fff;
+                    height: 48px;
+                    width: 20%;
+                    line-height: 2.5;
+                    margin: 0 auto;
+                    display: flex;
+                  }
+                }
+                a.delet-btn {
+                  background: #ccc;
+                  border: 1px solid #ccc;
+                  height: 48px;
+                  width: 30%;
+                  font-size: 18px;
+                  border-radius: 100px;
+                  text-decoration: none;
+                  p.text {
+                    text-decoration: none;
+                    color: #fff;
+                    height: 48px;
+                    width: 20%;
+                    line-height: 2.5;
+                    margin: 0 auto;
+                    display: flex;
+                  }
+                }
+              }
+            }
+          }
+          .parcase-product{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .purchase-btn{
+              background: #3CCACE;
+              border: 1px solid #3CCACE;
+              line-height: 60px;
+              width: 100%;
+              font-size: 18px;
+              text-align: center;
+              text-decoration: none;
+              &__text{
+                color: #fff;
               }
             }
           }

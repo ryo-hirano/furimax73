@@ -1,0 +1,46 @@
+//商品出品完了画面
+.sale-done{
+  background-color: #f8f8f8;
+  padding-top: 70px;
+  &__header{
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+    h2.done-title{
+      text-align: center;
+      font-size: 22px;
+      padding: 32px;
+      font-weight: bold;
+    }
+    .done-message{
+      text-align: center;
+      a {
+        color: #0095ee;
+        text-decoration: none;
+      }
+    }
+  }
+  .done-contents{
+    width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    .continue-sale {
+      text-align: center;
+      padding-top: 50px;
+      a {
+        color: #0095ee;
+        text-decoration: none;
+      }
+    }
+    .return-top{
+      text-align: center;
+      padding-top: 50px;
+      a {
+        color: #0095ee;
+        text-decoration: none;
+      }
+    }
+  }
+}

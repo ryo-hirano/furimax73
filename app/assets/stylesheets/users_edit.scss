@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+}
+
+
+.form {
+  background-color: #f1f1f1;
+  height: 100%;
+  padding: 40px;
+  .profile-container {
+    background-color: #ffffff;
+    height: 100%;
+    width: 700px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    .profile-head {
+      height: 50px;
+      text-align: center;
+      padding: 8px 24px;
+    }
+    .profile-top {
+      background-color: rgb(232, 254, 255);
+      height: 156px;
+      padding: 20px 16px ;
+      display: flex;
+      justify-content: center;
+      .image-form {
+        background-color: rgb(255, 246, 246);
+        height: 110px;
+        width: 110px;
+        border: solid thin;
+        border-radius: 12%;
+        margin: 10px 20px 0 0;
+        padding: 3px;
+        img {
+          height: 100%;
+          width: 100%;
+          display: block;
+          margin: 0 auto;
+          object-fit: contain;
+         } 
+        .user-image { 
+          height: 100%;
+          width: 100%;
+          .hidden { 
+            height: 100%;
+            width: 100%;
+            display: none;
+          }
+        }
+        }  
+      }  
+      .nickname-box {
+        margin-left: 30px;
+        .current-nickname {
+          height: 48px;
+          width: 220px;
+          font-size: 24px;
+          font-weight: lighter;
+          text-align: center;
+          margin: 15px auto 0;
+        }
+        .nickname-form {
+          background-color: #ffffff;
+          height: 48px;
+          width: 220px;
+          font-size: 18px;
+          font-weight: lighter;
+          border: solid thin;
+          border-radius: 5px;
+          padding: 0 16px;
+        }
+      }
+    .profile-setting {
+      height: 362px;
+      padding: 40px 16px;
+      .text-form {
+        .introduction_edit {
+          height: 216px;
+          width: 668px;
+          font-size: 16px;
+          font-weight: normal;
+          border: solid thin #dddddd;
+          padding: 15px;
+        }
+      }
+      .btn-form {
+        .edit-btn { 
+          background-color: #3CCACE;
+          height: 50px;
+          width: 668px;
+          font-size: 14px;
+          color: #ffffff;
+          line-height: 50px;
+          text-align: center;
+          margin: 16px auto 0;
+          }
+      }
+    }
+  }
+}

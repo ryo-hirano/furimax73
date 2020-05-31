@@ -1,0 +1,30 @@
+= render partial: 'shared/main_header'
+
+.SearchView
+  %section.SearchView__result
+    %h2.head 検索結果
+    %h3.word
+      = "' #{params[:keyword]} '"
+    .products
+      .products__lists
+        - @products.each do |product|
+          .list
+            = link_to product_path(product) do
+              %figure.list-img
+                -if product.buyer_id.present? 
+                  %p.sold-out SOLD OUT
+                = image_tag product.images.first.src.url
+              .list-body
+                %h3.name
+                  = product.name
+                  .details
+                    %ul
+                      %li
+                        = product.price
+                        円
+                      %li
+                        %i.fa.fa-star.likeicon
+                        0
+                    %p (税込)
+
+= render partial: 'shared/main_footer'
